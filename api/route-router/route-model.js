@@ -1,4 +1,4 @@
-const db = require('../../data/dbConfig')
+// const db = require('../../data/dbConfig')
 
 module.exports = {
     get,
@@ -7,18 +7,18 @@ module.exports = {
 }
 
 function get() {
-    return db('routes')
-        .select('route_type').distinctOn('routes.route_type')
+    // return db('routes')
+    //     .select('route_type').distinctOn('routes.route_type')
 }
 
 function getRoutes(filter) {
-    return db('routes')
-        .where(filter)
-        .select('route_name', 'id')
+    // return db('routes')
+    //     .where(filter)
+    //     .select('route_name', 'id')
 }
 
 function getCoords(id) {
-    return db('routes')
-        .where({ id })
-        .select('content')
+    // return db('routes')
+    //     .where({ id })
+    //     .select('content')
 }
